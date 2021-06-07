@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+#welcome-section {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#intro {
+    font-style: italic;
+    font-size: 2rem;
+    color: violet;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+
+#projects {
+    background-color: #45567d;
+    padding: 6rem 1rem;
+}
+
+#project-heading {
+    color: white;
+    text-decoration: underline;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 90px 0 4rem;
+}
+
+#image1 {
+    grid-area: image1;
+}
+
+#image2 {
+    grid-area: image2;
+}
+
+#product-landing {
+    object-position: 50% 50%;
+}
+
+#image3 {
+    grid-area: image3;
+}
+
+#contact-info {
+    height: 82vh;
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#message1 {
+    font-size: 5rem;
+}
+
+#message2 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+#contact-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1000px;
+    margin: 24px 0;
+    flex-wrap: wrap;
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 4px solid floralwhite;
+    background-color: grey;
+    width: 100%;
+    height: 10vh;
+}
+
+#footnote1 {
+    
+}
+
+.nav-links {
+    display: block;
+    padding: 2rem 2.2rem;
+    text-decoration: none;
+}
+
+.nav-links:hover {
+    background-color: brown;
+    color: white;
+}
+
+.project-tile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 350px;
+    grid-template-areas: 
+        "image1 image2 image3"
+    ;
+    gap: 2.5rem;
+    max-width: 1280px;
+    margin: 6rem auto;
+}
+
+.screenshots {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-description {
+    display: block;
+    color: white;
+    background-color: #303841;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.grid-effects {
+    color: #303841;
+    transition: color 0.3s ease-out;
+}
+
+.project-link:hover .grid-effects {
+    color: #ff7f50;
+}
+
+.contact-list {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    transition: ease-out 0.3s;
+}
+
+.contact-list:hover {
+    transform: translateY(8px);
+}
+
+.contact-link {
+    text-decoration: none;
+    color: white;
+}
+
+.footnotes {
+    font-size: 1.2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 360px){
+    .nav-links {
+        font-size: 1.2rem;
+        padding: 2.2rem 1.5rem;
+    }
+    #navbar {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    #intro {
+        font-size: 1rem;
+    }
+
+    #project-heading {
+        text-align: center;
+        text-decoration: none;
+        font-size: 2.6rem;
+        border-bottom: 0.5px solid white;
+        max-width: 95%;
+        padding-bottom: 0;
+        margin: 0 auto 2rem auto;
+    }
+
+    #project-tile {
+        grid-template-columns: 1fr;
+        margin: 50px;
+        grid-template-areas: 
+            "image1"
+            "image2"
+            "image3"
+        ;
+        row-gap: 7rem;
+    }
+
+    #message1 {
+        font-size: 3rem;
+    }
+}
+
+/**
+    Next step:
+        1. Adjust gap distance between columns/rows.
+        2. Standardize the size of the grid items.
+        3. Learn how to add captions to the images within the same link.
+**/

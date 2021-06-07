@@ -5,19 +5,71 @@
         <title>
             Personal Portfolio
         </title>
-        <link href="styles/styles.css">
+        <link href="styles/styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     </head>
     <body>
-        <nav>
-
+        <nav id="navbar">
+            <ul>
+                <li><a href="#welcome-section" class="nav-links">About</a></li>
+                <li><a href="#projects" class="nav-links">Work</a></li>
+                <li><a href="#contact-info" class="nav-links">Contact</a></li>
+            </ul>
         </nav>
-        <section>
+        <section id="welcome-section">
             <h1>
-                
+                Hi, I am The-Legendary-27
             </h1>
-            <p>
-                
+            <p id="intro">
+                a web developer
             </p>
         </section>
+        <section id="projects">
+            <h2 id="project-heading">
+                Here are some of my projects:
+            </h2>
+            <div class="project-tile">
+                <a href="https://codepen.io/thelegendary-27/pen/BapZWGa" id="image1" class="project-link" target="_blank">
+                    <img class="screenshots" src="Image_01.png" alt="Tribute Page">
+                    <p class="project-description"><span class="grid-effects">< </span>Tribute Page<span class="grid-effects"> /></span></p>
+                </a>
+                <a href="https://codepen.io/thelegendary-27/pen/xxgyxew" id="image2" class="project-link" target="_blank">
+                    <img id="product-landing" class="screenshots" src="Image_02.png" alt="Product Landing Page">
+                    <p class="project-description"><span class="grid-effects">< </span>Product Landing Page<span class="grid-effects"> /></span></p>
+                </a>
+                <a href="https://codepen.io/thelegendary-27/pen/XWpVgZY" id="image3" class="project-link" target="_blank">
+                    <img class="screenshots" src="Image_03.png" alt="Survey Form">
+                    <p class="project-description"><span class="grid-effects">< </span>Survey Form<span class="grid-effects"> /></span></p>
+                </a>
+            </div>
+        </section>
+        <section id="contact-info">
+            <h2 id="message1">
+                Let's work together...
+            </h2>
+            <p id="message2">
+                How do you like your coffee?
+            </p>
+            <ul id="contact-options">
+                <li class="contact-list"><a href="" class="contact-link"><i class="fab fa-facebook icon"></i> Facebook</a></li>
+                <li class="contact-list"><a href="" class="contact-link"><i class="fab fa-twitter-square icon"></i> Twitter</a></li>
+                <li class="contact-list"><a href="https://github.com/TheLegendary-27" id="profile-link" class="contact-link" target="_blank"><i class="fab fa-github-square icon"></i> Github</a></li>
+                <li class="contact-list"><a href="" class="contact-link"><i class="fas fa-at icon"></i> Send a mail</a></li>
+                <li class="contact-list"><a href="" class="contact-link"><i class="fas fa-mobile-alt icon"></i> Call me</a></li>
+            </ul>
+            <!--
+                Insert after the <p> links to contact info
+                after that is the footer.
+            -->
+        </section>
+        <footer id="footer">
+            <span id="footnote1" class="footnotes">**This is just a trial portfolio. Contact details are for demonstration purposes only.</span>
+            <span id="footnote2" class="footnotes">© Created by the-legendary-27</span>
+        </footer>
+        <script src="scripts/scripts.js"></script>
     </body>
 </html>
